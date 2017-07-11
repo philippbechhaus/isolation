@@ -61,11 +61,8 @@ abs(own_pos[1]-opp_pos[1]))
 return float((penalized_move_diff/manhattan_distance**(-1)))
 ```
 
-Analysis
-
-                        *************************                         
-                             Playing Matches                              
-                        *************************                         
+~~~~         
+                             T1                              
 
  Match #   Opponent    AB_Improved   AB_Custom   AB_Custom_2  AB_Custom_3 
                         Won | Lost   Won | Lost   Won | Lost   Won | Lost 
@@ -78,11 +75,9 @@ Analysis
     7     AB_Improved    6  |   4     4  |   6     6  |   4     4  |   6  
 --------------------------------------------------------------------------
            Win Rate:      60.0%        65.7%        61.4%        62.9%  
-Fig. 2: Test run 1
 
-                        *************************                         
-                             Playing Matches                              
-                        *************************                         
+
+                             T2                              
 
  Match #   Opponent    AB_Improved   AB_Custom   AB_Custom_2  AB_Custom_3 
                         Won | Lost   Won | Lost   Won | Lost   Won | Lost 
@@ -95,11 +90,9 @@ Fig. 2: Test run 1
     7     AB_Improved    6  |   4     3  |   7     4  |   6     6  |   4  
 --------------------------------------------------------------------------
            Win Rate:      55.7%        61.4%        65.7%        62.9%    
-Fig. 3: Test run 2
 
-                        *************************                         
-                             Playing Matches                              
-                        *************************                         
+
+                             T3
 
  Match #   Opponent    AB_Improved   AB_Custom   AB_Custom_2  AB_Custom_3 
                         Won | Lost   Won | Lost   Won | Lost   Won | Lost 
@@ -112,7 +105,7 @@ Fig. 3: Test run 2
     7     AB_Improved    4  |   6     3  |   7     5  |   5     4  |   6  
 --------------------------------------------------------------------------
            Win Rate:      62.9%        65.7%        71.4%        61.4%   
-Fig. 4: Test run 3
+~~~~
 
 A salient finding is the very steady performance of AB_Custom_3, a very simple and conservative heuristic, circling between 61.4% and 62.9%, also resulting in a relatively low standard deviation of ~1.4. The highest volatility in percentage is carried by AB_Custom_2, bottoming at 61.4%, but reaching a 71.4% win rate in test 3, which results in a delta of 10 percentage points.
 
