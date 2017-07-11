@@ -3,16 +3,18 @@
 
 
 ### Install
-1. install _Anaconda_ on OS
-2. copy _.yml_ file in folder of choice
+1. install _Anaconda_ environment
+2. copy _.yml_ file from project to folder of choice
 3. open Terminal of choice
-4. run _conda env create -f isol-environment-osx.yml_ to create the environment
+4. run _conda env create -f isol-environment-osx.yml_ to create necessary environment for tournament code
 5. run _source activate isol_ to enter the environment
 
 To run the tournament, open project folder from Terminal of choice and run _python tournament.py_ to start calculations.
-Disclaimer: isol environment needs to be activated  
+Disclaimer: isol environment needs to be activated!
 
 ### Analysis sample
+
+Following analysis shows a performance excerpt of available evaluation heuristics. The analysis is based on 210 fair games, letting the agent play against itself or an opponent embodying one out of seven different playing behaviors.
 
 As a starter, the most obvious heuristic – especially early in game – seems to count the available moves for each active_player. For a conservative approach, we penalize the number of available moves to the active player. The corresponding heuristic is AB_Custom_3.
 
